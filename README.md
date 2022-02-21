@@ -11,7 +11,7 @@ UnitUI is a Lightweight CSS Component Library with viable UI components that you
 ---
 
 # Installation
-To use UnitUI in to your project, Copy the below \<link> to the \<head> tag of your html, above all other stylesheets.
+To use UnitUI in to your project, Copy the below \<link> tag and Paste inside the \<head> tag of your html file, above all other stylesheets.
   ```
   <link rel="stylesheet" href="netlify style.css file" />
   ```
