@@ -1,0 +1,178 @@
+@import url("../components/text-utilities/text-utilities.css");
+
+.main-container {
+	width: 100%;
+	max-width: 800px;
+	min-height: 100vh;
+	height: max-content;
+	margin: auto;
+	padding: var(--u-60) var(--u-20) 0 var(--u-20);
+	position: relative;
+}
+
+/* Landing page content */
+.main-content {
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+/* Main Buttons */
+.button-wrapper {
+	display: flex;
+	flex-direction: row;
+}
+
+.main-get-started,
+.main-github {
+	border: none;
+	outline: none;
+	padding: var(--u-14) var(--u-20);
+	margin: var(--u-8);
+	font-size: var(--text-base);
+	font-family: var(--tertiary-font);
+	border-radius: var(--rounded-md);
+	cursor: pointer;
+	box-shadow: var(--normal-shadow);
+}
+
+.btn-icon {
+	padding-left: var(--u-6);
+	display: block;
+}
+
+.pallet {
+	width: 140px;
+	height: 100px;
+	margin: var(--u-4);
+	border: var(--u-1) solid var(--color-dark);
+	text-align: center;
+}
+.text-light {
+	color: var(--color-light);
+}
+
+.primary-bg {
+	background-color: var(--color-primary);
+}
+
+.primary-tint-bg {
+	background-color: var(--color-primary-tint);
+}
+
+.primary-shade-bg {
+	background-color: var(--color-primary-shade);
+}
+
+.secondary-bg {
+	background-color: var(--color-secondary);
+}
+
+.secondary-tint-bg {
+	background-color: var(--color-secondary-tint);
+}
+
+.secondary-shade-bg {
+	background-color: var(--color-secondary-shade);
+}
+.tertiary-bg {
+	background-color: var(--color-tertiary);
+}
+
+.tertiary-tint-bg {
+	background-color: var(--color-tertiary-tint);
+}
+
+.tertiary-shade-bg {
+	background-color: var(--color-tertiary-shade);
+}
+.success-bg {
+	background-color: var(--color-success);
+}
+
+.success-tint-bg {
+	background-color: var(--color-success-tint);
+}
+
+.success-shade-bg {
+	background-color: var(--color-success-shade);
+}
+.warning-bg {
+	background-color: var(--color-warning);
+}
+
+.warning-tint-bg {
+	background-color: var(--color-warning-tint);
+}
+
+.warning-shade-bg {
+	background-color: var(--color-warning-shade);
+}
+
+.danger-bg {
+	background-color: var(--color-danger);
+}
+
+.danger-tint-bg {
+	background-color: var(--color-danger-tint);
+}
+
+.danger-shade-bg {
+	background-color: var(--color-danger-shade);
+}
+.main-get-started {
+	background-color: var(--color-primary);
+	color: var(--color-tertiary);
+	color: var(--color-light);
+}
+
+.main-get-started:hover {
+	transition: 0.4s ease-in-out;
+	background-color: var(--color-primary-shade);
+	box-shadow: none;
+}
+
+.main-github {
+	border: 0.014px solid var(--color-secondary);
+	color: var(--default-text);
+	background-color: var(--color-tertiary);
+}
+
+.main-github:hover {
+	transition: 0.3s ease-in-out;
+	box-shadow: none;
+	background-color: var(--color-tertiary-shade);
+}
+
+.main-heading {
+	margin-top: 200px;
+	margin-bottom: var(--u-20);
+	font-family: var(--tertiary-font);
+	font-size: var(--text-5xl);
+	font-weight: 900;
+}
+
+.main-description {
+	font-family: var(--tertiary-font);
+	font-size: var(--text-2xl);
+	margin-bottom: var(--u-40);
+}
+
+/* Mobile styles */
+@media screen and (max-width: 800px) {
+	.main-heading {
+		font-size: var(--text-2xl);
+		margin-top: 150px;
+	}
+	.main-description {
+		font-size: var(--text-xl);
+	}
+}
+
+@media screen and (max-width: 620px) {
+	.main-container {
+		padding: var(--u-36) var(--u-20);
+	}
+}

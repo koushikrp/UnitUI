@@ -1,0 +1,60 @@
+@import url("./root.css");
+
+.header {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-around;
+	position: fixed;
+	width: 100%;
+	background-color: var(--color-tertiary-rgb, 0.667);
+	backdrop-filter: blur(var(--u-20));
+	z-index: 5;
+	padding: 1em;
+	border-bottom: 0.11px solid var(--color-secondary);
+	color: var(--color-primary);
+	font-size: var(--text-lg);
+	font-family: var(--tertiary-font);
+}
+
+a {
+	color: var(--default-text);
+}
+
+a span {
+	color: var(--color-primary);
+}
+
+.header-content {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 0 var(--u-20);
+	max-width: 800px;
+}
+
+.btn-icon {
+	padding-left: var(--u-2);
+}
+
+.git-link {
+	display: flex;
+	align-items: center;
+	color: var(--color-dark);
+	cursor: pointer;
+}
+
+.git-link:hover {
+	color: var(--color-dark-shade);
+}
+
+/* -----------------Media queries------------------- */
+@media screen and (max-width: 620px) {
+	.sidebar {
+		display: none;
+	}
+	.header {
+		justify-content: space-between;
+		padding: 1rem 0.1rem;
+	}
+}

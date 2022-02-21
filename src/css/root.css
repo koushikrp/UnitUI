@@ -1,0 +1,167 @@
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Raleway:wght@300;400;700;900&family=Roboto+Serif:wght@200;300;400;500&display=swap');
+
+/* Reset CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Common styles */
+:root {
+  /* Default colors */
+  --default-text: #1e293b;
+  --body: #f1f5f9;
+  --primary-font: 'Roboto Serif', sans-serif;
+  --secondary-font: 'Lato', sans-serif;
+  --tertiary-font: 'Raleway', sans-serif;
+
+  /* Colors */
+
+  /** primary  **/
+  --color-primary: #6C63FF;
+  --color-primary-rgb: 108, 99, 255  ;
+  --color-primary-shade: #7706e0;
+  --color-primary-tint: #8120ff;
+
+  /** secondary (slate-300) **/
+  --color-secondary: #d6e0ec;
+  --color-secondary-rgb: 214, 224, 236;
+  --color-secondary-shade: #bfc7d1;
+  --color-secondary-tint: #d0d9e4;
+  --color-secondary-overlay: #d9e3ee94;
+  --color-gold: #FFD700;
+
+  /** tertiary (slate-200) **/
+  --color-tertiary: #e2e8f0;
+  --color-tertiary-rgb: 226, 232, 240;
+  --color-tertiary-shade: #c7ccd3;
+  --color-tertiary-tint: #e5eaf2;
+  --color-gray: gray;
+
+  /** success **/
+  --color-success: #2dd36f;
+  --color-success-rgb: 45, 211, 111;
+  --color-success-shade: #28ba62;
+  --color-success-tint: #42d77d;
+
+  /** warning **/
+  --color-warning: #ffc409;
+  --color-warning-rgb: 255, 196, 9;
+  --color-warning-shade: #e0ac08;
+  --color-warning-tint: #ffca22;
+
+  /** danger **/
+  --color-danger: #eb445a;
+  --color-danger-rgb: 235, 68, 90;
+  --color-danger-shade: #cf3c4f;
+  --color-danger-tint: #ed576b;
+
+  /** dark **/
+  --color-dark: #222428;
+  --color-dark-rgb: 34, 36, 40;
+  --color-dark-shade: #1e2023;
+  --color-dark-tint: #383a3e;
+
+  /** medium **/
+  --color-medium: #f3f3f3;
+  --color-medium-rgb: 243, 243, 243;
+  --color-medium-shade: #d6d6d6;
+  --color-medium-tint: #f4f4f4;
+
+  /** light **/
+  --color-light: #ffffff;
+  --color-light-rgb: 255, 255, 255;
+  --color-light-shade: #e0e0e0;
+  --color-light-tint: #ffffff;
+
+  /* Text */
+  --text-2xs: 0.625rem; /* 12px */
+  --text-xs: 0.75rem; /* 12px */
+  --text-sm: 0.875rem; /* 14px */
+  --text-base: 1rem; /* 16px */
+  --text-lg: 1.125em; /* 18px */
+  --text-xl: 1.25rem; /* 20px */
+  --text-2xl: 1.5rem; /* 24px*/
+  --text-3xl: 1.875rem; /* 30px*/
+  --text-4xl: 2.25rem; /* 36px*/
+  --text-5xl: 3rem; /* 48px*/
+
+  /* Padding / Margin units */
+  --u-0: 0px; /* 0px */
+  --u-1: 1px; /* 1px */
+  --u-2: 0.125rem; /* 2px */
+  --u-4: 0.25rem; /* 4px */
+  --u-6: 0.375rem; /* 6px */
+  --u-8: 0.5rem; /* 8px */
+  --u-10: 0.625rem; /* 10px */
+  --u-12: 0.75rem; /* 12px */
+  --u-14: 0.875rem; /* 14px */
+  --u-16: 1rem; /* 16px */
+  --u-20: 1.25rem; /* 20px */
+  --u-24: 1.5rem; /* 24px */
+  --u-28: 1.75rem; /* 28px */
+  --u-32: 2rem; /* 32px */
+  --u-36: 2.25rem; /* 36px */
+  --u-40: 2.5rem; /* 40px */
+  --u-55: 3.438rem; /* 55px */
+  --u-58: 3.625rem; /* 58px */
+  --u-60: 3.75rem; /* 60px */
+  --u-60: 3.75rem; /* 60px */
+  --u-80: 5rem; /* 80px */
+
+  /* Border radius */
+  --rounded-none: 0px;
+  --rounded-sm: 0.125rem;
+  --rounded: 0.25rem;
+  --rounded-md: 0.375rem;
+  --rounded-lg: 0.5rem;
+  --rounded-xl: 0.75rem;
+  --rounded-2xl: 1rem;
+  --rounded-3xl: 1.5rem;
+  --rounded-full: 9999px;
+
+  /* Shadows */
+  --normal-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  --floating-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px;
+  --faint-shadow :: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+  /* common transition */
+  --normal-transition: 0.3s ease-in-out;
+  --normal-transform: scale(0.99);
+
+--material-shadow : rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+}
+
+::selection {
+  color: var(--color-light);
+  background: var(--color-primary);
+}
+::moz-selection {
+  color: var(--color-light);
+  background: var(--color-primary);
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--body);
+}
