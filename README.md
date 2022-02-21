@@ -6,7 +6,7 @@ UnitUI is a Lightweight CSS Component Library with viable UI components that you
 # Why use UnitUI?
 - 100% Responsive
 - 100% Customizable
-- Free to Use and Open Source Code
+- Free to Use and Open Source Software
 
 ---
 
