@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Introduction</title>
+		<title>Color Pallet</title>
 		<link rel="stylesheet" href="../css/header.css" />
 		<link rel="stylesheet" href="../css/main.css" />
 		<link rel="stylesheet" href="../css/docs.css" />
@@ -24,20 +24,21 @@
 				</span>
 			</div>
 		</header>
-
 		<main class="main-container">
 			<div class="respSidebar">
 				<span class="closeNav pr-10 pl-10 text-center" onclick="closeNavBar()">
 					Close <i class="far fa-times"></i>
 				</span>
-				<h3 class="flex">Getting started</h3>
+				<h3>Getting started</h3>
 				<nav class="intro-list">
 					<ul>
-						<li class="active-link">
+						<li>
 							<a href="./getting-started.html">Introduction</a>
 						</li>
 						<li><a href="./usage.html">Usage</a></li>
-						<li><a href="./colors.html">Color pallet</a></li>
+						<li class="active-link">
+							<a href="./colors.html">Color pallet</a>
+						</li>
 						<li><a href="./typography.html">Typography</a></li>
 					</ul>
 				</nav>
@@ -73,12 +74,14 @@
 					<h3>Getting started</h3>
 					<nav class="intro-list">
 						<ul>
-							<li class="active-link">
+							<li>
 								<a href="./getting-started.html">Introduction</a>
 							</li>
-							<li><a href="./typography.html">Typography</a></li>
-							<li><a href="./colors.html">Color pallet</a></li>
 							<li><a href="./usage.html">Usage</a></li>
+							<li class="active-link">
+								<a href="./colors.html">Color pallet</a>
+							</li>
+							<li><a href="./typography.html">Typography</a></li>
 						</ul>
 					</nav>
 					<h3>Components</h3>
@@ -108,19 +111,30 @@
 						</ul>
 					</nav>
 				</div>
-
-				<!-- Responsive sidebar -->
 				<div class="documentation-component">
-					<h1 class="content-title">Introduction</h1>
-					<p>
-						UnitUI is created with Light-Weightedness as it's core principle. UnitUI is comprised of
-						components with Responsive and Customizable UI, hand picked colors and well-defined class names.
-					</p>
-					<br />
-					<p>
-						UnitUI helps you to build your projects faster with less code. Code examples and Demos are
-						included with each component for easier usage.
-					</p>
+					<h1 class="content-title">Color pallet</h1>
+					<h2>Default color pallet used in UnitUI</h2>
+					<p>Following are css variables for all the colors used in the UnitUI.</p>
+					<div class="component-display flex justify-center flex-wrap">
+						<div class="pallet danger-shade-bg text-light">--color-danger-shade</div>
+						<div class="pallet warning-tint-bg">--color-warning-tint</div>
+						<div class="pallet danger-tint-bg text-light">--color-danger-tint</div>
+						<div class="pallet secondary-tint-bg">--color-secondary-tint</div>
+						<div class="pallet primary-shade-bg text-light">--color-primary-shade</div>
+						<div class="pallet primary-bg text-light">--color-primary</div>
+						<div class="pallet primary-tint-bg text-light">--color-primary-tint</div>
+						<div class="pallet secondary-shade-bg">-color-secondary-shade</div>
+						<div class="pallet tertiary-shade-bg">--color-tertiary-shade</div>
+						<div class="pallet tertiary-bg">--color-tertiary</div>
+						<div class="pallet success-shade-bg text-light">--color-success-shade</div>
+						<div class="pallet success-bg text-light">--color-success</div>
+						<div class="pallet tertiary-tint-bg">--color-tertiary-tint</div>
+						<div class="pallet success-tint-bg text-light">--color-success-tint</div>
+						<div class="pallet warning-shade-bg">--color-warning-shade</div>
+						<div class="pallet warning-bg">--color-warning</div>
+						<div class="pallet secondary-bg">--color-secondary</div>
+						<div class="pallet danger-bg text-light">--color-danger</div>
+					</div>
 				</div>
 			</div>
 		</main>

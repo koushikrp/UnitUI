@@ -4,10 +4,10 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Introduction</title>
-		<link rel="stylesheet" href="../css/header.css" />
 		<link rel="stylesheet" href="../css/main.css" />
+		<link rel="stylesheet" href="../css/header.css" />
 		<link rel="stylesheet" href="../css/docs.css" />
+		<title>Typography</title>
 	</head>
 	<body>
 		<header class="header">
@@ -24,21 +24,24 @@
 				</span>
 			</div>
 		</header>
-
 		<main class="main-container">
 			<div class="respSidebar">
 				<span class="closeNav pr-10 pl-10 text-center" onclick="closeNavBar()">
 					Close <i class="far fa-times"></i>
 				</span>
-				<h3 class="flex">Getting started</h3>
+				<h3>Getting started</h3>
 				<nav class="intro-list">
 					<ul>
-						<li class="active-link">
+						<li>
 							<a href="./getting-started.html">Introduction</a>
 						</li>
 						<li><a href="./usage.html">Usage</a></li>
-						<li><a href="./colors.html">Color pallet</a></li>
-						<li><a href="./typography.html">Typography</a></li>
+						<li>
+							<a href="./colors.html">Color pallet</a>
+						</li>
+						<li class="active-link">
+							<a href="./typography.html">Typography</a>
+						</li>
 					</ul>
 				</nav>
 				<h3>Components</h3>
@@ -73,12 +76,16 @@
 					<h3>Getting started</h3>
 					<nav class="intro-list">
 						<ul>
-							<li class="active-link">
+							<li>
 								<a href="./getting-started.html">Introduction</a>
 							</li>
-							<li><a href="./typography.html">Typography</a></li>
-							<li><a href="./colors.html">Color pallet</a></li>
 							<li><a href="./usage.html">Usage</a></li>
+							<li>
+								<a href="./colors.html">Color pallet</a>
+							</li>
+							<li class="active-link">
+								<a href="./typography.html">Typography</a>
+							</li>
 						</ul>
 					</nav>
 					<h3>Components</h3>
@@ -108,19 +115,33 @@
 						</ul>
 					</nav>
 				</div>
-
-				<!-- Responsive sidebar -->
 				<div class="documentation-component">
-					<h1 class="content-title">Introduction</h1>
+					<h1 class="content-title">Typography</h1>
+					<h2 class="content-subtitle">Headings</h2>
+					<div class="component-display flex flex-col items-center">
+						<h1 class="h1">h1 - This is h1 heading</h1>
+						<h2 class="h2">h2 - This is h2 heading</h2>
+						<h3 class="h3">h3 - This is h3 heading</h3>
+						<h4 class="h4">h4 - This is h4 heading</h4>
+						<h5 class="h5">h5 - This is h5 heading</h5>
+						<h6 class="h6">h6 - This is h6 heading</h6>
+					</div>
+					<h2 class="content-subtitle">Font Family</h2>
 					<p>
-						UnitUI is created with Light-Weightedness as it's core principle. UnitUI is comprised of
-						components with Responsive and Customizable UI, hand picked colors and well-defined class names.
+						UnitUI uses
+						<span class="highlighted-text">Roboto</span> and
+						<span class="highlighted-text">Raleway</span> which are google fonts. For using google fonts add
+						following imports in the css file.
 					</p>
 					<br />
-					<p>
-						UnitUI helps you to build your projects faster with less code. Code examples and Demos are
-						included with each component for easier usage.
-					</p>
+					<div class="code-wrapper">
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28226%2C232%2C240%2C1%29&t=nord&wt=none&l=auto&width=500&ds=false&dsyoff=7px&dsblur=100px&wc=true&wa=false&pv=24px&ph=18px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2540import%2520url%28%27https%253A%252F%252Ffonts.googleapis.com%252Fcss2%253Ffamily%253DPoppins%253Awght%2540200%253B300%253B400%253B500%2526display%253Dswap%27%29%253B%250A%250A%2540import%2520url%28%27https%253A%252F%252Ffonts.googleapis.com%252Fcss2%253Ffamily%253DLato%253Awght%2540300%253B400%253B700%253B900%2526display%253Dswap%27%29%253B"
+							style="width: 560px; height: 215px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
 				</div>
 			</div>
 		</main>
