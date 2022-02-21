@@ -3,10 +3,11 @@
 .header {
 	display: flex;
 	flex-direction: row;
-	align-items: flex-start;
+	align-items: center;
 	justify-content: space-around;
 	position: fixed;
 	width: 100%;
+	height: var(--u-80);
 	background-color: var(--color-tertiary-rgb, 0.667);
 	backdrop-filter: blur(var(--u-20));
 	z-index: 5;
@@ -31,6 +32,7 @@ a span {
 	width: 100%;
 	padding: 0 var(--u-20);
 	max-width: 800px;
+	font-size: var(--text-xl);
 }
 
 .btn-icon {

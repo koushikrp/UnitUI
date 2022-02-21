@@ -1,0 +1,110 @@
+@import url(./utility.css);
+@import url(./root.css);
+
+.documentation-container {
+	display: flex;
+	padding: var(--u-20) 0;
+	font-family: var(--tertiary-font);
+}
+
+.sidebar {
+	flex-basis: 200px;
+}
+.code-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--color-tertiary);
+	padding-top: var(--u-14);
+	margin-bottom: var(--u-24);
+	border-radius: var(--rounded-md);
+	border: var(--u-1) solid var(--color-secondary-tint);
+}
+.intro-list {
+	padding-left: var(--u-10);
+	margin-bottom: var(--u-20);
+	font-size: var(--text-sm);
+	font-family: var(--primary-font);
+}
+
+.intro-list > ul > li > a:hover {
+	transition: 0.3s ease-in-out;
+	color: var(--color-primary);
+}
+.intro-list > ul > li > a {
+	display: block;
+	padding-top: var(--u-10);
+}
+.documentation-component {
+	flex-grow: 1;
+	max-width: 560px;
+	font-family: var(--tertiary-font);
+}
+.active-link a {
+	color: var(--color-primary);
+	font-weight: 500;
+}
+.content-title {
+	font-size: var(--text-3xl);
+	margin-bottom: var(--u-20);
+}
+.content-subtitle {
+	font-size: var(--text-2xl);
+	margin-bottom: var(--u-10);
+}
+.component-display {
+	padding: var(--u-20) var(--u-10);
+	border-radius: var(--rounded-md);
+	border: var(--u-1) solid var(--color-secondary-tint);
+	background-color: var(--color-tertiary);
+	margin-top: var(--u-10);
+	margin-bottom: var(--u-24);
+}
+.content-description {
+	font-size: var(--text-base);
+	margin-bottom: var(--u-20);
+}
+
+.highlighted-text {
+	background-color: var(--color-secondary);
+	color: var(--color-dark);
+	font-family: "Courier New", Courier, monospace;
+	font-size: var(--text-sm);
+}
+.respHam {
+	display: none;
+}
+
+.respSidebar {
+	display: none;
+	width: 0px;
+	cursor: pointer;
+}
+
+/* --------------Media Queries----------------- */
+@media screen and (max-width: 620px) {
+	.respHam {
+		display: inline;
+		cursor: pointer;
+	}
+	.sidebar {
+		display: none;
+	}
+	.respSidebar {
+		width: 50%;
+		margin-top: var(--u-24);
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		font-family: var(--primary-font);
+		position: absolute;
+		background-color: var(--color-light);
+		overflow: visible;
+		z-index: 8;
+		padding-top: var(--u-20);
+		padding-left: var(--u-10);
+	}
+	.respSidebar h3 {
+		font-size: var(--text-base);
+	}
+}
