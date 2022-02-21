@@ -1,0 +1,29 @@
+@import url("../../css/index.css");
+
+.h1 {
+	font-size: var(--u-40);
+}
+
+.h2 {
+	font-size: var(--u-32);
+}
+.h3 {
+	font-size: var(--u-28);
+}
+.h4 {
+	font-size: var(--u-24);
+}
+.h5 {
+	font-size: var(--u-20);
+}
+.h6 {
+	font-size: var(--u-16);
+}
+
+.text-small {
+	font-size: var(--text-sm);
+}
+
+.text-gray {
+	color: var(--color-gray);
+}

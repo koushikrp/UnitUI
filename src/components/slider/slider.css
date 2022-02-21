@@ -1,0 +1,19 @@
+@import url("../../css/index.css");
+
+.price-range {
+	width: 100%;
+	-webkit-appearance: none;
+	height: var(--u-8);
+	background: var(--color-secondary);
+	border-radius: var(--rounded-md);
+	cursor: pointer;
+}
+
+.price-range::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	height: var(--u-14);
+	width: var(--u-14);
+	border-radius: var(--rounded-full);
+	background: var(--color-dark);
+}

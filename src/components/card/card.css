@@ -1,0 +1,135 @@
+@import url("../../css/index.css");
+
+.card {
+	/* width: 15rem;
+  height: 25rem; */
+	border-radius: var(--rounded-md);
+	background-color: var(--color-light);
+	padding: var(--u-10);
+	transition: var(--normal-transition);
+}
+
+.card:hover {
+	box-shadow: none;
+	transform: var(--normal-transform);
+}
+
+.card-v {
+	width: 15.5rem;
+}
+
+.card-h {
+	/* background-color: red; */
+}
+
+.card-footer-h {
+	/* margin-left: var(--u-4); */
+}
+
+.card-badge {
+	background-color: var(--color-secondary-tint);
+	font-size: var(--text-xs);
+	padding: var(--u-4) var(--u-8);
+	border-radius: var(--rounded-md);
+}
+
+.card-img {
+	border-radius: var(--rounded-md);
+	width: 230px;
+	height: 300px;
+	border: 0.5px solid var(--color-secondary-tint);
+	z-index: -3;
+}
+
+.img-h {
+	height: 150px;
+	width: 120px;
+}
+
+.card-img-div {
+	margin-top: var(--u-6);
+	position: relative;
+	/* background-color: rgba(24, 24, 24, 0.384); */
+}
+
+.card-header {
+	position: absolute;
+	z-index: 2;
+	width: 14rem;
+	padding: var(--u-16) var(--u-6);
+	/* background-color: red; */
+}
+
+.card-text,
+.card-pricing {
+	margin: var(--u-6);
+}
+
+.card-overlay-text-div {
+	position: absolute;
+	z-index: 2;
+	margin-top: var(--u-6);
+	padding: 7.75em 0;
+	background-color: var(--color-secondary-overlay);
+	width: 12.75em;
+	border-radius: var(--rounded-md);
+	text-align: center;
+	font-size: var(--text-lg);
+}
+
+.overlay-text {
+	transform: rotate(-45deg);
+}
+
+.card-pricing {
+	font-weight: 700;
+	font-size: var(--text-lg);
+}
+
+.card-action-btn {
+	width: 100%;
+	padding: var(--u-8) 0;
+	margin: var(--u-2) 0;
+	border: none;
+	background-color: var(--color-primary);
+	color: var(--color-light);
+	font-size: var(--text-sm);
+	font-weight: 600;
+	border-radius: var(--rounded-md);
+	cursor: pointer;
+}
+.card-action-btn:hover {
+	background-color: var(--color-primary-tint);
+}
+.card-action-btn:active {
+	transform: var(--normal-transform);
+}
+.card-action-btn-outline {
+	width: 100%;
+	padding: var(--u-8) 0;
+	margin: var(--u-6);
+	border: none;
+	background-color: transparent;
+	color: var(--color-primary);
+	font-size: var(--text-sm);
+	font-weight: 600;
+	border-radius: var(--rounded-md);
+	border: var(--u-1) solid var(--color-primary);
+	cursor: pointer;
+}
+.card-action-btn-outline:active {
+	transform: var(--normal-transform);
+}
+.btn-h {
+	margin-left: var(--u-6);
+}
+
+.btn-disabled {
+	background-color: var(--color-secondary);
+	color: var(--color-tertiary);
+	cursor: not-allowed;
+}
+.btn-disabled:hover {
+	background-color: var(--color-secondary);
+	color: var(--color-tertiary);
+}

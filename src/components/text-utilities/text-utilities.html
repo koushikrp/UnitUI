@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Text utilities</title>
+		<link rel="stylesheet" href="./text-utilities.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="header-content">
+				<span>
+					<span class="pr-10 respHam" onclick="toggleHam()">
+						<i class="fal fa-bars text-dark"></i>
+					</span>
+					<a href="/index.html"> <span>Min</span> UI </a>
+				</span>
+				<span class="git-link">
+					<a href="https://github.com/Pratham82/min-ui" target="blank">Github</a>
+					<i class="fab fa-github btn-icon"></i>
+				</span>
+			</div>
+		</header>
+		<main class="main-container">
+			<div class="respSidebar">
+				<span class="closeNav pr-10 pl-10 text-center" onclick="closeNav()">
+					Close <i class="far fa-times"></i>
+				</span>
+				<h3>Getting started</h3>
+				<nav class="intro-list">
+					<ul>
+						<li>
+							<a href="../../pages/getting-started.html">Introduction</a>
+						</li>
+						<li><a href="../../pages/usage.html">Usage</a></li>
+						<li><a href="../../pages/colors.html">Color pallet</a></li>
+						<li><a href="../../pages/typography.html">Typography</a></li>
+					</ul>
+				</nav>
+				<h3>Components</h3>
+				<nav class="intro-list">
+					<ul>
+						<li><a href="../avatar/avatar.html">Avatar</a></li>
+						<li><a href="../alert/alert.html">Alert</a></li>
+						<li><a href="../badge/badge.html">Badge</a></li>
+						<li><a href="../button/button.html">Button</a></li>
+						<li><a href="../card/card.html">Card</a></li>
+						<li><a href="../image/image.html">Image</a></li>
+						<li><a href="../input/input.html">Input</a></li>
+						<div class="divider"></div>
+						<li><a href="../grid/grid.html">Grid</a></li>
+						<li><a href="../list/list.html">List</a></li>
+						<li><a href="../modal/modal.html">Modal</a></li>
+						<li><a href="../navigation/navigation.html">Navigation</a></li>
+						<li><a href="../rating/rating.html">Rating</a></li>
+						<li class="active-link">
+							<a href="./text-utilities.html">Text utilities</a>
+						</li>
+						<li><a href="../toast/toast.html">Toast</a></li>
+						<div class="divider"></div>
+						<li><a href="../slider/slider.html">Slider</a></li>
+						<li><a href="../utility/utility.html">Utility</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="documentation-container">
+				<div class="sidebar">
+					<h3>Getting started</h3>
+					<nav class="intro-list">
+						<ul>
+							<li>
+								<a href="../../pages/getting-started.html">Introduction</a>
+							</li>
+							<li><a href="../../pages/usage.html">Usage</a></li>
+							<li><a href="../../pages/colors.html">Color pallet</a></li>
+							<li><a href="../../pages/typography.html">Typography</a></li>
+						</ul>
+					</nav>
+					<h3>Components</h3>
+					<nav class="intro-list">
+						<ul>
+							<li><a href="../avatar/avatar.html">Avatar</a></li>
+							<li><a href="../alert/alert.html">Alert</a></li>
+							<li><a href="../badge/badge.html">Badge</a></li>
+							<li><a href="../button/button.html">Button</a></li>
+							<li><a href="../card/card.html">Card</a></li>
+							<li><a href="../image/image.html">Image</a></li>
+							<li><a href="../input/input.html">Input</a></li>
+							<div class="divider"></div>
+							<li><a href="../grid/grid.html">Grid</a></li>
+							<li><a href="../list/list.html">List</a></li>
+							<li><a href="../modal/modal.html">Modal</a></li>
+							<li><a href="../navigation/navigation.html">Navigation</a></li>
+							<li><a href="../rating/rating.html">Rating</a></li>
+							<li class="active-link">
+								<a href="./text-utilities.html">Text utilities</a>
+							</li>
+							<li><a href="../toast/toast.html">Toast</a></li>
+							<div class="divider"></div>
+							<li><a href="../slider/slider.html">Slider</a></li>
+							<li><a href="../utility/utility.html">Utility</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="documentation-component">
+					<h1 class="content-title">Text utilities</h1>
+					<h2 class="content-subtitle">Headings</h2>
+					<p>
+						Headings ranges from class
+						<span class="highlighted-text">h1</span> to <span class="highlighted-text">h6</span> class which
+						are modification of default headings
+					</p>
+					<div class="component-display flex flex-col items-center">
+						<h1 class="h1">h1 - This is h1 heading</h1>
+						<h2 class="h2">h2 - This is h2 heading</h2>
+						<h3 class="h3">h3 - This is h3 heading</h3>
+						<h4 class="h4">h4 - This is h4 heading</h4>
+						<h5 class="h5">h5 - This is h5 heading</h5>
+						<h6 class="h6">h6 - This is h6 heading</h6>
+					</div>
+					<div class="code-wrapper">
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28226%2C232%2C240%2C1%29&t=nord&wt=none&l=auto&width=500&ds=false&dsyoff=7px&dsblur=100px&wc=true&wa=false&pv=24px&ph=18px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ch1%2520class%253D%2522h1%2522%253Eh1%2520-%2520This%2520is%2520h1%2520heading%253C%252Fh1%253E%250A%253Ch2%2520class%253D%2522h2%2522%253Eh2%2520-%2520This%2520is%2520h2%2520heading%253C%252Fh2%253E%250A%253Ch3%2520class%253D%2522h3%2522%253Eh3%2520-%2520This%2520is%2520h3%2520heading%253C%252Fh3%253E%250A%253Ch4%2520class%253D%2522h4%2522%253Eh4%2520-%2520This%2520is%2520h4%2520heading%253C%252Fh4%253E%250A%253Ch5%2520class%253D%2522h5%2522%253Eh5%2520-%2520This%2520is%2520h5%2520heading%253C%252Fh5%253E%250A%253Ch6%2520class%253D%2522h6%2522%253Eh6%2520-%2520This%2520is%2520h6%2520heading%253C%252Fh6%253E"
+							style="width: 560px; height: 234px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
+
+					<h2 class="content-subtitle">Small text</h2>
+					<p>
+						For using small text apply
+						<span class="highlighted-text">text-small</span> class to the element
+					</p>
+					<div class="component-display flex flex-col items-center">
+						<p class="text-small">Small text</p>
+					</div>
+					<div class="code-wrapper">
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28226%2C232%2C240%2C1%29&t=nord&wt=none&l=auto&width=500&ds=false&dsyoff=7px&dsblur=100px&wc=true&wa=false&pv=24px&ph=18px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522text-small%2522%253ESmall%2520text%253C%252Fp%253E%250A"
+							style="width: 560px; height: 159px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
+
+					<h2 class="content-subtitle">Gray text</h2>
+					<p>
+						For using gray text
+						<span class="highlighted-text">text-gray</span> class to the element
+					</p>
+					<div class="component-display flex justify-center">
+						<p class="text-gray">Gray text</p>
+					</div>
+					<div class="code-wrapper">
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28226%2C232%2C240%2C1%29&t=nord&wt=none&l=auto&width=500&ds=false&dsyoff=7px&dsblur=100px&wc=true&wa=false&pv=24px&ph=18px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522text-gray%2522%253EGray%2520text%253C%252Fp%253E%250A"
+							style="width: 560px; height: 159px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
+
+					<h2 class="content-subtitle">Text center</h2>
+					<p>
+						For using centered text apply
+						<span class="highlighted-text">text-center</span> class to the element
+					</p>
+					<div class="component-display flex flex-col">
+						<p class="text-center">Text center</p>
+					</div>
+					<div class="code-wrapper">
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28226%2C232%2C240%2C1%29&t=nord&wt=none&l=auto&width=500&ds=false&dsyoff=7px&dsblur=100px&wc=true&wa=false&pv=24px&ph=18px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522text-center%2522%253EText%2520center%253C%252Fp%253E%250A"
+							style="width: 560px; height: 159px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
+				</div>
+			</div>
+		</main>
+		<script src="/src/js/index.js"></script>
+	</body>
+</html>

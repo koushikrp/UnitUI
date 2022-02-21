@@ -1,0 +1,93 @@
+@import url("../avatar/avatar.css");
+
+.badge-wrapper {
+	position: relative;
+	width: max-content;
+}
+
+.badge-wrapper {
+	position: relative;
+	width: max-content;
+}
+
+.badge-sm {
+	right: var(--u-10);
+	height: var(--u-8);
+	width: var(--u-8);
+}
+
+.badge-md {
+	display: grid;
+	place-content: center;
+	right: var(--u-12);
+	height: var(--u-10);
+	width: var(--u-10);
+	font-size: 8px;
+	color: var(--color-light);
+}
+
+.badge-lg {
+	display: grid;
+	place-content: center;
+	right: var(--u-12);
+	height: var(--u-16);
+	width: var(--u-16);
+	font-size: 8px;
+	padding: 2px;
+	color: var(--color-light);
+}
+
+.badge-xl {
+	display: grid;
+	place-content: center;
+	/* left: var(--u-); */
+	top: -5%;
+	right: -5%;
+	height: var(--u-24);
+	width: var(--u-24);
+	font-size: var(--text-xs);
+	padding: 2px;
+	color: var(--color-light);
+}
+.badge-wrapper > span {
+	bottom: var(--u-4);
+	position: absolute;
+	border-radius: var(--rounded-full);
+}
+
+.badge-primary {
+	background-color: var(--color-success);
+}
+
+.badge-secondary {
+	background-color: var(--color-secondary-shade);
+}
+
+.badge-normal {
+	background-color: var(--color-danger);
+}
+
+.badge-icon {
+	top: -50%;
+	right: -10%;
+}
+/* Buttons for docs */
+.btn {
+	padding: var(--u-14) var(--u-20);
+	background-color: var(--color-primary);
+	outline: none;
+	border: none;
+	border-radius: var(--rounded-md);
+	color: var(--color-light);
+	margin: var(--u-8);
+}
+
+.btn-secondary {
+	background-color: var(--color-light);
+	color: var(--color-dark);
+}
+
+.icon-wrapper {
+	margin: 0 10px;
+	font-size: var(--text-2xl);
+}

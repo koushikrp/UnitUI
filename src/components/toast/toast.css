@@ -1,0 +1,84 @@
+@import url("../../css/index.css");
+
+.toast-btn {
+	background-color: var(--color-primary);
+	border: none;
+	color: var(--color-light);
+	padding: var(--u-10) var(--u-16);
+	cursor: pointer;
+	border-radius: var(--rounded-md);
+}
+
+.toast-btn:hover {
+	background-color: var(--color-primary-tint);
+}
+.toast-btn:active {
+	transform: scale(0.98);
+}
+#toast-ani {
+	visibility: hidden;
+	width: 48%;
+	height: var(--u-40);
+	background-color: var(--color-primary);
+	border-radius: var(--rounded-md);
+	color: var(--color-light);
+	position: fixed;
+	bottom: var(--u-40);
+	z-index: 5;
+	text-align: center;
+}
+
+#toast-ani > span {
+	display: block;
+	padding-top: var(--u-10);
+}
+
+#toast-ani.show {
+	visibility: visible;
+	-webkit-animation: fadeIn 0.5s, fadeout 0.5s 2.5s;
+	animation: fadeIn 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadeIn {
+	from {
+		bottom: 0;
+		opacity: 0;
+	}
+	to {
+		bottom: var(--u-40);
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		bottom: 0;
+		opacity: 0;
+	}
+	to {
+		bottom: var(--u-40);
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes fadeout {
+	from {
+		bottom: var(--u-40);
+		opacity: 1;
+	}
+	to {
+		bottom: 0;
+		opacity: 0;
+	}
+}
+
+@keyframes fadeout {
+	from {
+		bottom: var(--u-40);
+		opacity: 1;
+	}
+	to {
+		bottom: 0;
+		opacity: 0;
+	}
+}

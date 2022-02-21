@@ -1,0 +1,78 @@
+@import url("../../css/index.css");
+
+.avatar {
+	width: var(--u-60);
+	margin: 0 var(--u-10);
+	border: var(--u-2) solid var(--color-light);
+}
+
+.avatar-lg {
+	width: var(--u-60);
+	height: var(--u-60);
+}
+
+.avatar-md {
+	width: var(--u-40);
+	height: var(--u-40);
+}
+
+.avatar-sm {
+	width: var(--u-28);
+	height: var(--u-28);
+}
+
+.avatar-rounded {
+	border-radius: var(--rounded-full);
+}
+
+.avatar-square {
+	border-radius: var(--rounded-md);
+}
+
+/* Status */
+.status-badge-wrapper {
+	position: relative;
+	width: max-content;
+}
+
+.status-badge-wrapper {
+	position: relative;
+	width: max-content;
+}
+
+.status-badge-sm {
+	right: var(--u-10);
+	height: var(--u-8);
+	width: var(--u-8);
+}
+
+.status-badge-md {
+	right: var(--u-12);
+	height: var(--u-10);
+	width: var(--u-10);
+}
+
+.status-badge-lg {
+	right: var(--u-14);
+	height: var(--u-12);
+	width: var(--u-12);
+}
+
+.status-badge-wrapper > span {
+	bottom: var(--u-4);
+	position: absolute;
+	border-radius: var(--rounded-full);
+	border: var(--u-2) solid var(--color-light);
+}
+
+.status-badge-online {
+	background-color: var(--color-success);
+}
+
+.status-badge-offline {
+	background-color: var(--color-secondary-shade);
+}
+
+.status-badge-busy {
+	background-color: var(--color-danger);
+}

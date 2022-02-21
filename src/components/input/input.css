@@ -1,0 +1,36 @@
+@import url("../../css/index.css");
+
+.input-default {
+	padding: var(--u-10) var(--u-14);
+	border: var(--u-1) solid var(--color-dark);
+	border-radius: var(--rounded-md);
+	margin-top: var(--u-6);
+	font-size: var(--text-md);
+	outline: none;
+}
+
+.label {
+	display: block;
+	margin: var(--u-4) 0;
+}
+
+.label-error {
+	color: var(--color-danger);
+}
+.input-error {
+	border: var(--u-1) solid var(--color-danger);
+}
+
+.input-warning {
+	border: var(--u-1) solid var(--color-warning);
+}
+.label-warning {
+	color: var(--color-warning);
+}
+
+.input-success {
+	border: var(--u-1) solid var(--color-success);
+}
+.label-success {
+	color: var(--color-success);
+}

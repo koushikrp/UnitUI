@@ -1,0 +1,72 @@
+@import url("../../css/index.css");
+
+.spaced-list {
+	background-color: var(--color-light);
+	width: 15rem;
+	border-radius: var(--rounded-md);
+	list-style: none;
+	margin: 0 var(--u-6);
+}
+
+.list-item {
+	padding: var(--u-8);
+	border-bottom: var(--u-1) solid var(--color-secondary);
+}
+
+.spaced-list > li:last-child {
+	border-bottom: none;
+}
+
+.spaced-list-alt {
+	background-color: var(--color-light);
+	width: 15rem;
+	list-style: none;
+	margin: 0 var(--u-6);
+	border-radius: var(--rounded-md);
+}
+
+.spaced-list-alt > li:nth-child(odd) {
+	background-color: var(--color-dark);
+	color: var(--color-light);
+}
+
+.spaced-list-alt > li:first-child {
+	border-top-left-radius: var(--rounded-md);
+	border-top-right-radius: var(--rounded-md);
+}
+
+.spaced-list-alt > li:last-child {
+	border-bottom-left-radius: var(--rounded-md);
+	border-bottom-right-radius: var(--rounded-md);
+}
+
+.stacked-list {
+	list-style: none;
+	background-color: var(--color-light);
+	width: 18rem;
+}
+
+.list-img {
+	border-radius: var(--rounded-full);
+	height: var(--u-40);
+	width: var(--u-40);
+}
+
+.stacked-list-item {
+	padding: var(--u-10);
+	display: flex;
+	justify-content: space-between;
+	border-bottom: var(--u-1) solid var(--color-secondary);
+	/* margin-bottom: var(--u-4); */
+}
+.list-content {
+	flex-grow: 1;
+	padding-left: var(--u-16);
+}
+.sender-title {
+	font-size: var(--text-md);
+	font-weight: 600;
+}
+.sender-text {
+	font-size: var(--text-sm);
+}

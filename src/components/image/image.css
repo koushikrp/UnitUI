@@ -1,0 +1,39 @@
+@import url("../../css/index.css");
+
+.img {
+	margin: var(--u-4);
+}
+.img-sm {
+	width: 10rem;
+	height: 6rem;
+}
+
+.img-md {
+	width: 20rem;
+	height: 11rem;
+}
+
+.img-lg {
+	width: 30rem;
+	height: 15rem;
+}
+
+.img-fluid {
+	width: 100%;
+	object-fit: cover;
+}
+
+.sm-square {
+	height: 10rem;
+	width: 10rem;
+	object-fit: cover;
+}
+.md-square {
+	height: 15rem;
+	width: 15rem;
+	object-fit: cover;
+}
+
+.img-rounded {
+	border-radius: var(--rounded-full);
+}

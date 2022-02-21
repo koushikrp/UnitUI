@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Card</title>
+		<link rel="stylesheet" href="./card.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="header-content">
+				<span>
+					<span class="pr-10 respHam" onclick="toggleHam()">
+						<i class="fal fa-bars text-dark"></i>
+					</span>
+					<a href="/index.html"> <span>Min</span> UI </a>
+				</span>
+				<span class="git-link">
+					<a href="https://github.com/Pratham82/min-ui" target="blank">Github</a>
+					<i class="fab fa-github btn-icon"></i>
+				</span>
+			</div>
+		</header>
+		<main class="main-container">
+			<div class="respSidebar">
+				<span class="closeNav pr-10 pl-10 text-center" onclick="closeNav()">
+					Close <i class="far fa-times"></i>
+				</span>
+				<h3>Getting started</h3>
+				<nav class="intro-list">
+					<ul>
+						<li>
+							<a href="../../pages/getting-started.html">Introduction</a>
+						</li>
+						<li><a href="../../pages/usage.html">Usage</a></li>
+						<li><a href="../../pages/colors.html">Color pallet</a></li>
+						<li><a href="../../pages/typography.html">Typography</a></li>
+					</ul>
+				</nav>
+				<h3>Components</h3>
+				<nav class="intro-list">
+					<ul>
+						<li><a href="../avatar/avatar.html">Avatar</a></li>
+						<li><a href="../alert/alert.html">Alert</a></li>
+						<li><a href="../badge/badge.html">Badge</a></li>
+						<li><a href="../button/button.html">Button</a></li>
+						<li class="active-link"><a href="../card/card.html">Card</a></li>
+						<li><a href="../image/image.html">Image</a></li>
+						<li><a href="../input/input.html">Input</a></li>
+						<div class="divider"></div>
+						<li><a href="../grid/grid.html">Grid</a></li>
+						<li><a href="../list/list.html">List</a></li>
+						<li><a href="../modal/modal.html">Modal</a></li>
+						<li><a href="../navigation/navigation.html">Navigation</a></li>
+						<li><a href="../rating/rating.html">Rating</a></li>
+						<li>
+							<a href="../text-utilities/text-utilities.html">Text Utilities</a>
+						</li>
+						<li><a href="../toast/toast.html">Toast</a></li>
+						<div class="divider"></div>
+						<li><a href="../slider/slider.html">Slider</a></li>
+						<li><a href="../utility/utility.html">Utility</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="documentation-container">
+				<div class="sidebar">
+					<h3>Getting started</h3>
+					<nav class="intro-list">
+						<ul>
+							<li>
+								<a href="../../pages/getting-started.html">Introduction</a>
+							</li>
+							<li><a href="../../pages/usage.html">Usage</a></li>
+							<li><a href="../../pages/colors.html">Color pallet</a></li>
+							<li><a href="../../pages/typography.html">Typography</a></li>
+						</ul>
+					</nav>
+					<h3>Components</h3>
+					<nav class="intro-list">
+						<ul>
+							<li><a href="../avatar/avatar.html">Avatar</a></li>
+							<li><a href="../alert/alert.html">Alert</a></li>
+							<li><a href="../badge/badge.html">Badge</a></li>
+							<li><a href="../button/button.html">Button</a></li>
+							<li class="active-link"><a href="../card/card.html">Card</a></li>
+							<li><a href="../image/image.html">Image</a></li>
+							<li><a href="../input/input.html">Input</a></li>
+							<div class="divider"></div>
+							<li><a href="../grid/grid.html">Grid</a></li>
+							<li><a href="../list/list.html">List</a></li>
+							<li><a href="../modal/modal.html">Modal</a></li>
+							<li><a href="../navigation/navigation.html">Navigation</a></li>
+							<li><a href="../rating/rating.html">Rating</a></li>
+							<li>
+								<a href="../text-utilities/text-utilities.html">Text Utilities</a>
+							</li>
+							<li><a href="../toast/toast.html">Toast</a></li>
+							<div class="divider"></div>
+							<li><a href="../slider/slider.html">Slider</a></li>
+							<li><a href="../utility/utility.html">Utility</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="documentation-component">
+					<h1 class="content-title">Card</h1>
+					<h2 class="content-subtitle">Card with badge</h2>
+					<div class="component-display flex justify-center">
+						<div class="card card-v floating-shadow">
+							<div class="card-body flex justify-center">
+								<div class="card-header flex justify-between">
+									<div class="card-badge">ON SALE</div>
+									<span><i class="fal fa-heart"></i></span>
+									<span class="hidden"><i class="fal fa-times-circle"></i></span>
+								</div>
+								<div class="card-overlay-text-div hidden">
+									<div class="overlay-text">Out of stock</div>
+								</div>
+								<div class="card-img-div">
+									<img src="../../assets/images/product_shoe_1.jpg" class="card-img" alt="" />
+								</div>
+							</div>
+							<div class="card-footer">
+								<div class="card-text">Nike React Infinity Flyknit Running Shoes</div>
+								<div class="card-pricing">₹ 5500</div>
+								<button class="card-action-btn">
+									<i class="far fa-shopping-cart"></i> &nbsp; ADD TO CART
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="code-wrapper">
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28226%2C232%2C240%2C1%29&t=nord&wt=none&l=auto&width=500&ds=false&dsyoff=7px&dsblur=100px&wc=true&wa=false&pv=24px&ph=18px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-v%2520floating-shadow%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-body%2520flex%2520justify-center%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-header%2520flex%2520justify-between%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253EON%2520SALE%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fal%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522hidden%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%253E%253Ci%2520class%253D%2522fal%2520fa-times-circle%2522%253E%253C%252Fi%250A%2520%2520%2520%2520%2520%2520%2520%2520%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-overlay-text-div%2520hidden%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522overlay-text%2522%253EOut%2520of%2520stock%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-img-div%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522..%252F..%252Fassets%252Fimages%252Fproduct_shoe_1.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522card-img%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-footer%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-text%2522%253E%250A%2520%2520%2520%2520%2520%2520Nike%2520React%2520Infinity%2520Flyknit%2520Running%2520Shoes%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-pricing%2522%253E%25E2%2582%25B9%25205500%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-action-btn%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%2520%2526nbsp%253B%2520ADD%2520TO%2520CART%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+							style="width: 560px; height: 718px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
+
+					<h2 class="content-subtitle">Card with dismiss</h2>
+					<div class="component-display flex justify-center">
+						<div class="card card-v floating-shadow">
+							<div class="card-body flex justify-center">
+								<div class="card-header flex justify-between">
+									<div class="card-badge">ON SALE</div>
+									<span class="hidden"><i class="fal fa-heart"></i></span>
+									<span><i class="fal fa-times-circle"></i></span>
+								</div>
+								<div class="card-overlay-text-div hidden">
+									<div class="overlay-text">Out of stock</div>
+								</div>
+								<div class="card-img-div">
+									<img src="../../assets/images/product_shoe_1.jpg" class="card-img" alt="" />
+								</div>
+							</div>
+							<div class="card-footer">
+								<div class="card-text">Nike React Infinity Flyknit Running Shoes</div>
+								<div class="card-pricing">₹ 5500</div>
+								<button class="card-action-btn">ADD TO CART</button>
+							</div>
+						</div>
+					</div>
+					<div class="code-wrapper">
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28226%2C232%2C240%2C1%29&t=nord&wt=none&l=auto&width=500&ds=false&dsyoff=7px&dsblur=100px&wc=true&wa=false&pv=24px&ph=18px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-v%2520floating-shadow%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-body%2520flex%2520justify-center%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-header%2520flex%2520justify-between%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253EON%2520SALE%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522hidden%2522%253E%253Ci%2520class%253D%2522fal%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fal%2520fa-times-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-overlay-text-div%2520hidden%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522overlay-text%2522%253EOut%2520of%2520stock%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-img-div%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522..%252F..%252Fassets%252Fimages%252Fproduct_shoe_1.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522card-img%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-footer%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-text%2522%253E%250A%2520%2520%2520%2520%2520%2520Nike%2520React%2520Infinity%2520Flyknit%2520Running%2520Shoes%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-pricing%2522%253E%25E2%2582%25B9%25205500%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-action-btn%2522%253EADD%2520TO%2520CART%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A"
+							style="width: 560px; height: 662px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
+
+					<h2 class="content-subtitle">Card with text overlay</h2>
+					<div class="component-display flex justify-center">
+						<div class="card card-v floating-shadow">
+							<div class="card-body flex justify-center">
+								<div class="card-header flex justify-between">
+									<div class="card-badge">ON SALE</div>
+									<span><i class="fal fa-heart"></i></span>
+									<span class="hidden"><i class="fal fa-times-circle"></i></span>
+								</div>
+								<div class="card-overlay-text-div">
+									<div class="overlay-text">Out of stock</div>
+								</div>
+								<div class="card-img-div">
+									<img src="../../assets/images/product_shoe_1.jpg" class="card-img" alt="" />
+								</div>
+							</div>
+							<div class="card-footer">
+								<div class="card-text">Nike React Infinity Flyknit Running Shoes</div>
+								<div class="card-pricing">₹ 5500</div>
+								<button class="card-action-btn btn-disabled" disabled="true">
+									<i class="far fa-shopping-cart"></i> &nbsp; ADD TO CART
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="code-wrapper">
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28226%2C232%2C240%2C1%29&t=nord&wt=none&l=auto&width=500&ds=false&dsyoff=7px&dsblur=100px&wc=true&wa=false&pv=24px&ph=18px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-v%2520floating-shadow%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-body%2520flex%2520justify-center%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-header%2520flex%2520justify-between%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253EON%2520SALE%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fal%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522hidden%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%253E%253Ci%2520class%253D%2522fal%2520fa-times-circle%2522%253E%253C%252Fi%250A%2520%2520%2520%2520%2520%2520%2520%2520%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-overlay-text-div%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522overlay-text%2522%253EOut%2520of%2520stock%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-img-div%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522..%252F..%252Fassets%252Fimages%252Fproduct_shoe_1.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522card-img%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-footer%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-text%2522%253E%250A%2520%2520%2520%2520%2520%2520Nike%2520React%2520Infinity%2520Flyknit%2520Running%2520Shoes%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-pricing%2522%253E%25E2%2582%25B9%25205500%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-action-btn%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%2520%2526nbsp%253B%2520ADD%2520TO%2520CART%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+							style="width: 560px; height: 718px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
+
+					<h2 class="content-subtitle">Text only cards</h2>
+					<div class="component-display flex justify-center">
+						<div class="card card-v floating-shadow">
+							<div class="card-body flex justify-center">
+								<div class="card-header flex justify-between hidden">
+									<div class="card-badge">ON SALE</div>
+									<span><i class="fal fa-heart"></i></span>
+									<span class="hidden"><i class="fal fa-times-circle"></i></span>
+								</div>
+								<div class="card-overlay-text-div hidden">
+									<div class="overlay-text">Out of stock</div>
+								</div>
+								<div class="card-img-div hidden">
+									<img src="../../assets/images/product_shoe_1.jpg" class="card-img" alt="" />
+								</div>
+							</div>
+							<div class="card-footer">
+								<div class="card-text">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae
+									quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis
+									harum quisquam eius sed odit fugiat
+								</div>
+								<div class="card-pricing hidden">₹ 5500</div>
+								<button class="card-action-btn">READ MORE</button>
+							</div>
+						</div>
+					</div>
+					<div class="code-wrapper">
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28226%2C232%2C240%2C1%29&t=nord&wt=none&l=auto&width=500&ds=false&dsyoff=7px&dsblur=100px&wc=true&wa=false&pv=24px&ph=18px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-v%2520floating-shadow%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-body%2520flex%2520justify-center%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-header%2520flex%2520justify-between%2520hidden%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253EON%2520SALE%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fal%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522hidden%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%253E%253Ci%2520class%253D%2522fal%2520fa-times-circle%2522%253E%253C%252Fi%250A%2520%2520%2520%2520%2520%2520%2520%2520%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-overlay-text-div%2520hidden%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522overlay-text%2522%253EOut%2520of%2520stock%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-img-div%2520hidden%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522..%252F..%252Fassets%252Fimages%252Fproduct_shoe_1.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522card-img%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-footer%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-text%2522%253E%250A%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%250A%2520%2520%2520%2520%2520%2520Maxime%2520mollitia%252C%2520molestiae%2520quas%2520vel%2520sint%2520commodi%2520repudiandae%250A%2520%2520%2520%2520%2520%2520consequuntur%2520voluptatum%2520laborum%2520numquam%2520blanditiis%2520harum%250A%2520%2520%2520%2520%2520%2520quisquam%2520eius%2520sed%2520odit%2520fugiat%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-pricing%2520hidden%2522%253E%25E2%2582%25B9%25205500%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-action-btn%2522%253EREAD%2520MORE%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A"
+							style="width: 560px; height: 811px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
+
+					<h2 class="content-subtitle">Vertical/Horizontal cards</h2>
+					<div class="component-display flex justify-center">
+						<div class="card card-h flex floating-shadow">
+							<div class="card-body flex justify-center">
+								<div class="card-header flex justify-between hidden">
+									<div class="card-badge">ON SALE</div>
+									<span><i class="fal fa-heart"></i></span>
+									<span class="hidden"><i class="fal fa-times-circle"></i></span>
+								</div>
+								<div class="card-overlay-text-div hidden">
+									<div class="overlay-text">Out of stock</div>
+								</div>
+								<div class="card-img-div">
+									<img src="../../assets/images/product_shoe_1.jpg" class="card-img img-h" alt="" />
+								</div>
+							</div>
+							<div class="card-footer card-footer-h">
+								<div class="card-text">Nike React Infinity Flyknit Running Shoes</div>
+								<div class="card-pricing">₹ 5500</div>
+								<button class="card-action-btn btn-h">
+									<i class="far fa-shopping-cart"></i> &nbsp; ADD TO CART
+								</button>
+								<button class="card-action-btn-outline">
+									<i class="far fa-bolt"></i> &nbsp; BUY NOW
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="code-wrapper">
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28226%2C232%2C240%2C1%29&t=nord&wt=none&l=auto&width=500&ds=false&dsyoff=7px&dsblur=100px&wc=true&wa=false&pv=24px&ph=18px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-h%2520flex%2520floating-shadow%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-body%2520flex%2520justify-center%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-header%2520flex%2520justify-between%2520hidden%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253EON%2520SALE%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fal%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522hidden%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%253E%253Ci%2520class%253D%2522fal%2520fa-times-circle%2522%253E%253C%252Fi%250A%2520%2520%2520%2520%2520%2520%2520%2520%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-overlay-text-div%2520hidden%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522overlay-text%2522%253EOut%2520of%2520stock%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-img-div%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522..%252F..%252Fassets%252Fimages%252Fproduct_shoe_1.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522card-img%2520img-h%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-footer%2520card-footer-h%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-text%2522%253E%250A%2520%2520%2520%2520%2520%2520Nike%2520React%2520Infinity%2520Flyknit%2520Running%2520Shoes%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-pricing%2522%253E%25E2%2582%25B9%25205500%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-action-btn%2520btn-h%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%2520%2526nbsp%253B%2520ADD%2520TO%2520CART%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-action-btn-outline%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-bolt%2522%253E%253C%252Fi%253E%2520%2526nbsp%253B%2520BUY%2520NOW%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+							style="width: 560px; height: 773px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
+
+					<h2 class="content-subtitle">Card with/without shadow</h2>
+					<div class="component-display flex justify-center">
+						<div class="card card-v">
+							<div class="card-body flex justify-center">
+								<div class="card-header flex justify-between">
+									<div class="card-badge">ON SALE</div>
+									<span><i class="fal fa-heart"></i></span>
+									<span class="hidden"><i class="fal fa-times-circle"></i></span>
+								</div>
+								<div class="card-overlay-text-div hidden">
+									<div class="overlay-text">Out of stock</div>
+								</div>
+								<div class="card-img-div">
+									<img src="../../assets/images/product_shoe_1.jpg" class="card-img" alt="" />
+								</div>
+							</div>
+							<div class="card-footer">
+								<div class="card-text">Nike React Infinity Flyknit Running Shoes</div>
+								<div class="card-pricing">₹ 5500</div>
+								<button class="card-action-btn">
+									<i class="far fa-shopping-cart"></i> &nbsp; ADD TO CART
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="code-wrapper">
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28226%2C232%2C240%2C1%29&t=nord&wt=none&l=auto&width=500&ds=false&dsyoff=7px&dsblur=100px&wc=true&wa=false&pv=24px&ph=18px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-v%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-body%2520flex%2520justify-center%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-header%2520flex%2520justify-between%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253EON%2520SALE%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fal%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522hidden%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%253E%253Ci%2520class%253D%2522fal%2520fa-times-circle%2522%253E%253C%252Fi%250A%2520%2520%2520%2520%2520%2520%2520%2520%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-overlay-text-div%2520hidden%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522overlay-text%2522%253EOut%2520of%2520stock%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-img-div%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522..%252F..%252Fassets%252Fimages%252Fproduct_shoe_1.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522card-img%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-footer%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-text%2522%253E%250A%2520%2520%2520%2520%2520%2520Nike%2520React%2520Infinity%2520Flyknit%2520Running%2520Shoes%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-pricing%2522%253E%25E2%2582%25B9%25205500%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-action-btn%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%2520%2526nbsp%253B%2520ADD%2520TO%2520CART%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+							style="width: 560px; height: 718px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
+				</div>
+			</div>
+		</main>
+		<script src="/src/js/index.js"></script>
+	</body>
+</html>
