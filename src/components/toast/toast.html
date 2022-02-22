@@ -5,6 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Toast</title>
+		<link rel="shortcut icon" href="/src/assets/unit-icon.png" type="image/x-icon" />
 		<link rel="stylesheet" href="./toast.css" />
 	</head>
 	<script>
@@ -18,20 +19,21 @@
 		<header class="header">
 			<div class="header-content">
 				<span>
-					<span class="pr-10 respHam" onclick="toggleHam()">
+					<span class="pr-10 respHam" onclick="changeHam()">
 						<i class="fal fa-bars text-dark"></i>
 					</span>
-					<a href="/index.html"> <span>Min</span> UI </a>
+					<a href="/index.html"> <span>Unit</span> UI </a>
 				</span>
 				<span class="git-link">
-					<a href="https://github.com/Pratham82/min-ui" target="blank">Github</a>
-					<i class="fab fa-github btn-icon"></i>
+					<a href="https://github.com/koushikrp/UnitUI" target="blank">
+						<i class="fab fa-github btn-icon"></i>
+					</a>
 				</span>
 			</div>
 		</header>
 		<main class="main-container">
 			<div class="respSidebar">
-				<span class="closeNav pr-10 pl-10 text-center" onclick="closeNav()">
+				<span class="closeNav pr-10 pl-10 text-center" onclick="closeNavBar()">
 					Close <i class="far fa-times"></i>
 				</span>
 				<h3>Getting started</h3>
@@ -48,25 +50,26 @@
 				<h3>Components</h3>
 				<nav class="intro-list">
 					<ul>
-						<li><a href="../avatar/avatar.html">Avatar</a></li>
 						<li><a href="../alert/alert.html">Alert</a></li>
+						<li><a href="../avatar/avatar.html">Avatar</a></li>
 						<li><a href="../badge/badge.html">Badge</a></li>
 						<li><a href="../button/button.html">Button</a></li>
 						<li><a href="../card/card.html">Card</a></li>
+						<li><a href="../grid/grid.html">Grid</a></li>
 						<li><a href="../image/image.html">Image</a></li>
 						<li><a href="../input/input.html">Input</a></li>
-						<div class="divider"></div>
-						<li><a href="../grid/grid.html">Grid</a></li>
+						<li><a href="../slider/slider.html">Slider</a></li>
 						<li><a href="../list/list.html">List</a></li>
 						<li><a href="../modal/modal.html">Modal</a></li>
-						<li><a href="../navigation/navigation.html">Navigation</a></li>
+						<li>
+							<a href="../navigation/navigation.html">Navigation</a>
+						</li>
 						<li><a href="../rating/rating.html">Rating</a></li>
 						<li>
 							<a href="../text-utilities/text-utilities.html">Text Utilities</a>
 						</li>
-						<li class="active-link"><a href="./toast.html">Toast</a></li>
+						<li><a href="../toast/toast.html">Toast</a></li>
 						<div class="divider"></div>
-						<li><a href="../slider/slider.html">Slider</a></li>
 						<li><a href="../utility/utility.html">Utility</a></li>
 					</ul>
 				</nav>
@@ -88,25 +91,26 @@
 					<h3>Components</h3>
 					<nav class="intro-list">
 						<ul>
-							<li><a href="../avatar/avatar.html">Avatar</a></li>
 							<li><a href="../alert/alert.html">Alert</a></li>
+							<li><a href="../avatar/avatar.html">Avatar</a></li>
 							<li><a href="../badge/badge.html">Badge</a></li>
 							<li><a href="../button/button.html">Button</a></li>
 							<li><a href="../card/card.html">Card</a></li>
+							<li><a href="../grid/grid.html">Grid</a></li>
 							<li><a href="../image/image.html">Image</a></li>
 							<li><a href="../input/input.html">Input</a></li>
-							<div class="divider"></div>
-							<li><a href="../grid/grid.html">Grid</a></li>
+							<li><a href="../slider/slider.html">Slider</a></li>
 							<li><a href="../list/list.html">List</a></li>
 							<li><a href="../modal/modal.html">Modal</a></li>
-							<li><a href="../navigation/navigation.html">Navigation</a></li>
+							<li>
+								<a href="../navigation/navigation.html">Navigation</a>
+							</li>
 							<li><a href="../rating/rating.html">Rating</a></li>
 							<li>
 								<a href="../text-utilities/text-utilities.html">Text Utilities</a>
 							</li>
-							<li class="active-link"><a href="./toast.html">Toast</a></li>
+							<li><a href="../toast/toast.html">Toast</a></li>
 							<div class="divider"></div>
-							<li><a href="../slider/slider.html">Slider</a></li>
 							<li><a href="../utility/utility.html">Utility</a></li>
 						</ul>
 					</nav>
@@ -124,15 +128,17 @@
 						<button class="toast-btn" onclick="showToast()">Show Toast</button>
 					</div>
 					<div class="code-wrapper">
-						<iframe
-							src="https://carbon.now.sh/embed?bg=rgba%28226%2C232%2C240%2C1%29&t=nord&wt=none&l=auto&width=500&ds=false&dsyoff=7px&dsblur=100px&wc=true&wa=false&pv=24px&ph=18px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522toast-btn%2522%2520onclick%253D%2522showToast%28%29%2522%253EShow%2520Toast%253C%252Fbutton%253E%250A%250A%253Cdiv%2520id%253D%2522toast-ani%2522%253E%250A%2520%2520%253Cspan%253EThis%2520is%2520simple%2520toast%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A"
-							style="width: 560px; height: 271px; border: 0; transform: scale(1); overflow: hidden"
-							sandbox="allow-scripts allow-same-origin"
-						>
-						</iframe>
+						<pre>
+							<code>
+								&lt;button class="toast-btn" onclick="showToast()">Show Toast&lt;/button><br>
+								&lt;div id="toast-ani"><br>
+								&lt;span>This is a simple toast&lt;/span><br>
+								&lt;/div>
+							</code>
+						</pre>
 					</div>
 					<div id="toast-ani">
-						<span>This is simple toast </span>
+						<span>This is a simple toast </span>
 					</div>
 				</div>
 			</div>

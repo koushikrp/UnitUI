@@ -41,6 +41,7 @@ a span {
 
 .git-link {
 	display: flex;
+	size: 1.5rem;
 	align-items: center;
 	color: var(--color-dark);
 	cursor: pointer;

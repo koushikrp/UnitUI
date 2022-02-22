@@ -160,6 +160,9 @@
 	margin-bottom: var(--u-40);
 }
 
+pre {
+	white-space: normal;
+}
 /* Mobile styles */
 @media screen and (max-width: 800px) {
 	.main-heading {

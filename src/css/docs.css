@@ -9,16 +9,20 @@
 
 .sidebar {
 	flex-basis: 200px;
+	margin-top: 1rem;
 }
 .code-wrapper {
 	display: flex;
-	justify-content: center;
+	color: var(--color-primary);
+	font-size: larger;
+	justify-content: flex-start;
 	align-items: center;
 	background-color: var(--color-tertiary);
-	padding-top: var(--u-14);
+	padding: var(--u-14);
 	margin-bottom: var(--u-24);
-	border-radius: var(--rounded-md);
+	border-radius: var(--rounded);
 	border: var(--u-1) solid var(--color-secondary-tint);
+	line-height: 1.25em;
 }
 .intro-list {
 	padding-left: var(--u-10);
@@ -33,11 +37,12 @@
 }
 .intro-list > ul > li > a {
 	display: block;
-	padding-top: var(--u-10);
+	padding-top: var(--u-20);
 }
 .documentation-component {
+	margin-top: 1rem;
 	flex-grow: 1;
-	max-width: 560px;
+	max-width: 580px;
 	font-family: var(--tertiary-font);
 }
 .active-link a {
@@ -80,8 +85,7 @@
 	width: 0px;
 	cursor: pointer;
 }
-
-/* --------------Media Queries----------------- */
+/*-------------Media Queries--------------*/
 @media screen and (max-width: 620px) {
 	.respHam {
 		display: inline;
