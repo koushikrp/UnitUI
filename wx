@@ -1,0 +1,23 @@
+*   [33m3232d27[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Merge remote-tracking branch 'origin/main'
+[31m|[m[32m\[m  
+[31m|[m * [33mf1c38e2[m Delete src/components/grid directory
+[31m|[m * [33m8fefaa8[m Delete src/components/modal directory
+[31m|[m * [33m05b5b1c[m Delete src/components/navigation directory
+* [32m|[m [33ma21be15[m P0 components completed
+[32m|[m[32m/[m  
+*   [33m21395e2[m Merge remote-tracking branch 'refs/remotes/origin/main'
+[33m|[m[34m\[m  
+[33m|[m * [33md95bbbc[m update readme.md
+* [34m|[m [33mcfd785b[m feat: fixed and changed many features
+[34m|[m[34m/[m  
+* [33md891191[m docs: updated readme with correct netlify server links
+* [33m031956a[m Added all the components from local machine
+* [33ma85ecd8[m feat: added usage,getting-started,typography pages
+* [33m298c8b1[m feat: added styles for main page
+* [33m8889ee3[m feat: site enhancements
+* [33me75314a[m Update README.md
+* [33mb89ea37[m Update README.md
+* [33m9a2669e[m Update README.md
+* [33mb716941[m Update README.md
+* [33m9b77309[m Update README.md
+* [33m6882b5b[m Initial commit
